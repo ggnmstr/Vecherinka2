@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EndgameDialogFragment">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:gravity="center"
+            android:text="Good game!"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C27B0" />
+
+        <ScrollView
+            android:layout_weight="99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/endgameWordsLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+        </ScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9C27B0" />
+        <Button
+            android:id="@+id/endgameContinue"
+            android:text="Continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

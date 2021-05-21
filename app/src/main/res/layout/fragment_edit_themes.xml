@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditThemesFragment"
+    android:orientation="vertical"
+    android:weightSum="50">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="49">
+        <LinearLayout
+            android:id="@+id/showThemeLL"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <!--android:background="?android:attr/selectableItemBackground"!-->
+    <Button
+        android:id="@+id/addThemeButton"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/teal_700"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:text="+ ДОБАВИТЬ"/>
+
+
+</LinearLayout>

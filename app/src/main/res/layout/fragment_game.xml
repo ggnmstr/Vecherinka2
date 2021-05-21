@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddThemeDialogFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#D1A1A1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/debugGAMETV"
+            android:layout_width="248dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="GameText" />
+
+        <TextView
+            android:id="@+id/gameTimer"
+            android:layout_width="118dp"
+            android:layout_height="39dp"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="top|center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1:00" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="137dp"
+            android:layout_height="101dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="Button"
+            app:icon="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
