@@ -109,6 +109,53 @@ public class MainActivity extends AppCompatActivity {
         themeDAO.insertWord(word);
         word = new Word(themeid, "Baboon");
         themeDAO.insertWord(word);
+        word = new Word(themeid, "Anteater");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Anchovies");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Arctic Fox");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Butterfly");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Cockroach");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Crab");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Duck");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Frog");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Gorilla");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Horse");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Iguana");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Jaguar");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Koala");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Lemur");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Lobster");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Lizard");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Monkey");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Mouse");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Octopus");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Ocelot");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Pig");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Raccoon");
+        themeDAO.insertWord(word);
+
+
+
 
     }
 }
