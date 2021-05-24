@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.example.vecherinka.database.Theme;
 import com.example.vecherinka.database.ThemeDAO;
+import com.example.vecherinka.database.Word;
 import com.example.vecherinka.fragments.AddThemeDialogFragment;
 import com.example.vecherinka.fragments.EditThemesFragment;
 import com.example.vecherinka.fragments.EndgameDialogFragment;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         if (settings.getBoolean("firsttime", true)) {
             Log.d("MAINACTIVITY","firtst time!");
             // TODO: 02.05.2021 first-time launch, add something though.
+            firstTimeLaunch();
             settings.edit().putBoolean("firsttime", false).commit();
         }
     }
@@ -98,6 +100,15 @@ public class MainActivity extends AppCompatActivity {
     public void showEndgameResults(ArrayList<String> endgameWords, ArrayList<Boolean> endgameBooleans){
         EndgameDialogFragment fragment = EndgameDialogFragment.newInstance(endgameWords,endgameBooleans);
         fragment.show(getSupportFragmentManager(),"EndgameResults");
+    }
+
+    public void firstTimeLaunch(){
+        Theme theme1 = new Theme(1,"Animals");
+        long themeid = themeDAO.insertTheme(theme1);
+        Word word = new Word(themeid, "Lion");
+        themeDAO.insertWord(word);
+        word = new Word(themeid, "Baboon");
+        themeDAO.insertWord(word);
 
     }
 }

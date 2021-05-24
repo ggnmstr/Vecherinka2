@@ -19,8 +19,6 @@ public interface ThemeDAO {
     @Query("SELECT * FROM Theme")
     public List<ThemeWords> getThemeWords();
 
-    @Query("SELECT * FROM Theme")
-    public List<Theme> getThemes();
 
     @Query("SELECT * FROM Word WHERE wordThemeId =:wordThemeId")
     public List<Word> getWordsbyTheme(long wordThemeId);

@@ -11,7 +11,7 @@
         android:weightSum="3">
         <Button
             android:id="@+id/continueGameButton"
-            tools:text="Resume"
+            android:text="Resume"
             android:layout_margin="50dp"
             android:layout_gravity="top|center_horizontal"
             android:layout_weight="1"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/exitGameButton"
-            tools:text="Exit"
+            android:text="Exit"
             android:layout_margin="50dp"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_weight="1"
