@@ -11,8 +11,11 @@ import java.util.List;
 @Dao
 public interface ThemeDAO {
 
+    /*
     @Query("SELECT * FROM Theme WHERE stock == 0")
     public List<Theme> getNonStock();
+
+     */
 
 
     @Transaction
@@ -30,9 +33,6 @@ public interface ThemeDAO {
     public long insertTheme(Theme theme);
 
     @Insert
-    public void insertWords(Word[] words);
-
-    @Insert
     public void insertWord(Word word);
 
     @Delete
@@ -41,8 +41,7 @@ public interface ThemeDAO {
     @Delete
     public void deleteWords(List<Word> words);
 
-    @Delete
-    public void deleteWord(Word words);
+
 
 
     // long themeid = dao.insertheme(theme);
