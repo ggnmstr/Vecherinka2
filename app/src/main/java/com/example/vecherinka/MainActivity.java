@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences("Settings",0);
         if (settings.getBoolean("firsttime", true)) {
             Log.d("MAINACTIVITY","firtst time!");
-            // TODO: 02.05.2021 first-time launch
             firstTimeLaunch();
             settings.edit().putBoolean("firsttime", false).commit();
         }
