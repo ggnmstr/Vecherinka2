@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.WindowManager;
 
 import com.example.vecherinka.database.Theme;
 import com.example.vecherinka.database.ThemeDAO;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             firstTimeLaunch();
             settings.edit().putBoolean("firsttime", false).commit();
         }
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     @Override
