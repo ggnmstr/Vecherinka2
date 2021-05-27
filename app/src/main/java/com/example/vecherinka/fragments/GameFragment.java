@@ -159,6 +159,7 @@ public class GameFragment extends Fragment implements SensorEventListener {
         if ((int) event.values[0] == 9 && !gameStarted) {
             gameStarted = true;
             debugTV.setRotation(90);
+            debugTV.setTextSize(40);
             timerTV.setVisibility(View.VISIBLE);
             timerTV.setRotation(90);
             timer.resume();
